@@ -8,6 +8,6 @@
     "prettier/prettier": "error",
     "indent": ["error", 2],
     "quotes": ["error", "single"],
-    "endOfLine": ["error", "LF"]
+    "endOfLine": "crlf"
   }
 }
