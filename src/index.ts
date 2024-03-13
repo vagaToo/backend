@@ -1,10 +1,12 @@
 import 'reflect-metadata'
 import express, { json } from 'express'
+import cors from 'cors'
 import { config } from './config'
 import { initDatabase } from './infra/typeorm/dataSource'
 
 const app = express()
 app.use(json())
+app.use(cors())
 
 initDatabase()
 

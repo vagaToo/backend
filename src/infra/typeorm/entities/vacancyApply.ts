@@ -5,9 +5,10 @@ import {
   OneToOne,
   PrimaryGeneratedColumn,
 } from 'typeorm'
+import { VacancyEntity } from './vacancy'
 
 @Entity({ name: 'vacancyApply' })
-export class VacancyEntity {
+export class VacancyApplyEntity {
   @PrimaryGeneratedColumn()
   id: number
 

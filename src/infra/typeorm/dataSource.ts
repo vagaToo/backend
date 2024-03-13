@@ -2,6 +2,8 @@ import 'reflect-metadata'
 import { DataSource } from 'typeorm'
 import { OccupationAreaEntity } from './entities/occupationArea'
 import { config } from '../../config'
+import { VacancyApplyEntity } from './entities/vacancyApply'
+import { VacancyEntity } from './entities/vacancy'
 
 export const AppDataSource = new DataSource({
   type: 'postgres',
@@ -10,7 +12,7 @@ export const AppDataSource = new DataSource({
   username: config.DB_USERNAME,
   password: config.DB_PASSWORD,
   database: config.DB_DATABASE,
-  entities: [OccupationAreaEntity],
+  entities: [OccupationAreaEntity, VacancyApplyEntity, VacancyEntity],
   synchronize: true,
   logging: false,
 })
