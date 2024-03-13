@@ -7,7 +7,7 @@ import {
 } from 'typeorm'
 
 @Entity({ name: 'vacancyApply' })
-export class VacancyApply {
+export class VacancyEntity {
   @PrimaryGeneratedColumn()
   id: number
 
@@ -20,7 +20,7 @@ export class VacancyApply {
   @Column({ length: 50 })
   candidateCellphone: string
 
-  @OneToOne(() => VacancyApply)
+  @OneToOne(() => VacancyEntity)
   @JoinColumn()
-  vacancyId: VacancyApply
+  vacancyId: VacancyEntity
 }
