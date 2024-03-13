@@ -7,7 +7,7 @@
   "rules": {
     "prettier/prettier": "error",
     "indent": ["error", 2],
-    "quotes": ["error", "single"]
+    "quotes": ["error", "single"],
+    "endOfLine": ["error", "LF"]
   }
 }
-  
