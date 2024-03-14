@@ -1,6 +1,6 @@
-import { OccupationAreaRepository } from '@repository'
-import { AppDataSource } from '@dataSource'
-import { OccupationAreaEntity } from '@entity'
+import { AppDataSource } from '../../../infra/typeorm/dataSource'
+import { OccupationAreaEntity } from '../../../infra/typeorm/entities'
+import { OccupationAreaRepository } from '../../../infra/typeorm/repositories'
 
 export const makeOccupationAreaRepository = () => {
   return new OccupationAreaRepository(

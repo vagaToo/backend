@@ -5,7 +5,7 @@ import { config } from './config'
 import { AppDataSource, initDatabase } from './infra/typeorm/dataSource'
 import { OccupationAreaEntity } from './infra/typeorm/entities/occupationArea'
 import { OccupationAreaRepository } from './infra/typeorm/repositories/OccupationArea'
-import occupationAreaRoute from './presentation/routes/occupationAreaRoutes'
+import occupationAreaRoute from './main/routes/occupationAreaRoutes'
 
 const app = express()
 app.use(json())
